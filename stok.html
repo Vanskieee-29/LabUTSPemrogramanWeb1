@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Informasi Stok Buku</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+  <button class="btn-back" onclick="window.location.href='dashboard.html'">⬅ Kembali</button>
+  <h1>Informasi Stok</h1>
+  <p id="greeting"></p>
+</header>
+
+
+
+  <main class="stok-container">
+    <h2>Daftar Katalog Buku</h2>
+
+    <table id="tabelBuku">
+  <thead>
+    <tr>
+      <th>No</th>
+      <th>Cover</th> <!-- Tambahkan ini -->
+      <th>Kode</th>
+      <th>Nama Buku</th>
+      <th>Jenis</th>
+      <th>Edisi</th>
+      <th>Stok</th>
+      <th>Harga</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+
+    <button id="tambahBuku" class="btn-primary">+ Tambah Buku Baru</button>
+  </main>
+
+  <footer>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

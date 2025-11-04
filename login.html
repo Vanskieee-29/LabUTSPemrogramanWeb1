@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - Toko Buku Online</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="login-container">
+    <h2>Toko Buku Online</h2>
+    <div class="login-box">
+      <h3>Login</h3>
+      <form id="loginForm">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Masukkan email" required />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Masukkan password" required />
+
+        <button type="submit" class="btn-primary">Login</button>
+      </form>
+
+      <div class="login-links">
+        <a href="#" id="forgotBtn">Lupa Password?</a> |
+        <a href="#" id="registerBtn">Daftar</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Lupa Password -->
+  <div id="forgotModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeForgot">&times;</span>
+      <h3>Lupa Password</h3>
+      <p>Masukkan email untuk reset password.</p>
+      <input type="email" placeholder="Email Anda" />
+      <button class="btn-primary">Kirim</button>
+    </div>
+  </div>
+
+  <!-- Modal Daftar -->
+  <div id="registerModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeRegister">&times;</span>
+      <h3>Daftar Akun Baru</h3>
+      <input type="text" placeholder="Nama Lengkap" />
+      <input type="email" placeholder="Email" />
+      <input type="password" placeholder="Password" />
+      <button class="btn-primary">Daftar</button>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

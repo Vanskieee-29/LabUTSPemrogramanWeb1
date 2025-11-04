@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard - Toko Buku Online</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+  <button id="logoutBtn" class="btn-logout">Logout</button>
+  <h1>Toko Buku Online</h1>
+  <p id="greeting"></p>
+</header>
+
+
+
+  <main class="dashboard-container">
+    <div class="menu-card" onclick="navigateTo('stok.html')">
+      📚 <h3>Informasi Stok / Katalog</h3>
+    </div>
+
+    <div class="menu-card" onclick="navigateTo('checkout.html')">
+      🧾 <h3>Laporan Pemesanan</h3>
+    </div>
+
+    <div class="menu-card" onclick="navigateTo('tracking.html')">
+      🚚 <h3>Tracking Pengiriman</h3>
+    </div>
+
+  <footer>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
